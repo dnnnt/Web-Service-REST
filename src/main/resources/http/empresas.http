@@ -1,0 +1,30 @@
+### Listar todas as empresas
+GET http://localhost:8080/empresas
+
+### Buscar empresa por ID
+GET http://localhost:8080/empresas/1
+
+### Criar nova empresa
+POST http://localhost:8080/empresas
+Content-Type: application/json
+
+{
+  "id": 6,
+  "nome": "Tech Nova",
+  "cnpj": "99.888.777/0001-22",
+  "emailContato": "nova@tech.com"
+}
+
+### Atualizar empresa
+PUT http://localhost:8080/empresas/6
+Content-Type: application/json
+
+{
+  "id": 6,
+  "nome": "Tech Nova Atualizada",
+  "cnpj": "99.888.777/0001-22",
+  "emailContato": "contato@technova.com"
+}
+
+### Deletar empresa
+DELETE http://localhost:8080/empresas/6

@@ -1,0 +1,15 @@
+### Listar vagas
+GET http://localhost:8080/vagas
+
+### Criar vaga
+POST http://localhost:8080/vagas
+Content-Type: application/json
+
+{
+  "id": 8,
+  "titulo": "Estágio em TI",
+  "descricao": "Auxílio em redes e manutenção.",
+  "publicacao": "2025-11-01",
+  "ativo": true,
+  "idEmpresa": 4
+}

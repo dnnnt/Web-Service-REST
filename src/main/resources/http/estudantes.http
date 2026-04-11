@@ -1,0 +1,14 @@
+### Listar estudantes
+GET http://localhost:8080/estudantes
+
+### Criar estudante
+POST http://localhost:8080/estudantes
+Content-Type: application/json
+
+{
+  "id": 11,
+  "nome": "Novo Aluno",
+  "email": "novo@email.com",
+  "nascimento": "2005-01-01",
+  "anoIngresso": 2024
+}
